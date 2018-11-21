@@ -1,18 +1,14 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>{{config('app.name', 'LSAPP')}}</title>
+@section('content')
+    <h1>{{$title}}</h1>
+    @if(count($services) > 0)
+        <ul>    
+            @foreach ($services as $service)
+                    <li>{{$service}}</li>   
+            @endforeach
+        </ul>
+    @endif
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-       
-    </head>
-    <body>
-       <h1>Services</h1>
-       <p>This is the Services section</p>
-    </body>
-</html>
+@endsection
+

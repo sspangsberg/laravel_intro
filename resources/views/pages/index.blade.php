@@ -1,18 +1,7 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>{{config('app.name', 'LSAPP')}}</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-       
-    </head>
-    <body>
-       <h1>Welcome to Laravel</h1>
-       <p>This is the Laravel application from Laravel "From scratch Youtube series"</p>
-    </body>
-</html>
+@section('content')
+    <h1>{{$title}}</h1>
+    <p>This is the Laravel application from "Laravel From scratch Youtube series"</p>
+@endsection
+ 
