@@ -19,3 +19,6 @@ Route::get('/about', 'PagesController@about');
 Route::get('/users/{id}', function ($id) {
     return "This is users " . $id;    
 });
+
+
+Route::resource('posts', 'PostsController');

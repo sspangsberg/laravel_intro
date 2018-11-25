@@ -12,6 +12,7 @@
             </li>
             <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
             <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="/posts">Blog</a></li>
         </ul>
 
         <form class="form-inline my-2 my-lg-0">

@@ -8,13 +8,15 @@
         <title>{{ config('app.name','LSAPP') }}</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">        
     </head>
     <body>
         @include('inc.navbar')
+        <br>
         <div class="container">
             @yield('content')
         </div>
+
+        <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>
