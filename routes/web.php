@@ -16,9 +16,7 @@ Route::get('/', 'PagesController@index');
 Route::get('/services', 'PagesController@services');
 Route::get('/about', 'PagesController@about');
 
-Route::get('/users/{id}', function ($id) {
-    return "This is users " . $id;    
-});
+
 
 
 Route::resource('posts', 'PostsController');
@@ -26,3 +24,6 @@ Route::resource('posts', 'PostsController');
 Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index');
+
+Route::get('users/{user}',  ['as' => 'users.edit', 'uses' => 'UserController@edit']);
+Route::patch('users/{user}/update',  ['as' => 'users.update', 'uses' => 'UserController@update']);
